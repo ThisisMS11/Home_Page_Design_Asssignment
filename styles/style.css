@@ -1,0 +1,56 @@
+.contact-us {
+    border: solid 2px red;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.contact_us_child {
+    width: 80%;
+}
+
+.pink-text {
+    color: #FF3147;
+}
+
+#contactus-right-section img {
+    width: 345px;
+}
+
+.contact_us_button button {
+    border: none;
+    background-color: #FF3147;
+    color: white;
+    padding: 8px;
+    border-radius: 2px;
+}
+
+@media only screen and (max-width:1000px) {
+    .contact-us {
+        padding: 8px !important;
+    }
+
+    #contactus-right-section img {
+        display: none;
+    }
+
+    .contact_us_child {
+        width: 100%;
+        padding: 0px 0px !important;
+    }
+
+    /* Apply text-align to individual elements */
+    .contactus-left-section h5,
+    h1,
+    h6 {
+        text-align: center;
+        margin: 1px 0px;
+    }
+
+    /* .contactus-left-section h1{
+        how
+    } */
+
+    .contact_us_button {
+        text-align: center;
+    }
+}
