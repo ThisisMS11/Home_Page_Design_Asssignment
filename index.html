@@ -10,6 +10,8 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/corosuel.css">
+    <link rel="stylesheet" href="./styles/ourProject.css">
+    <link rel="stylesheet" href="./styles/expert-growth-section.css">
     <link rel="stylesheet" href="./styles/fonts.css">
 </head>
 
@@ -140,33 +142,114 @@
         </div>
     </section>
 
-    <!-- Modal -->
-    <!-- <div class="modal fade  " style="display: block;" id="exampleModal" tabindex="-1"
-        aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Talk to Us</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+    <section class="ourProjects">
+        <div class="container my-5">
+            <div class="text-center">
+                <h2 class="pink-text cormorant-sc-semibold">OUR PROJECT</h2>
+                <h1 class="font-weight-bold my-4 cormorant-sc-bold">WHY WE ARE BEST</h1>
+            </div>
+
+            <div class="row mt-4 mt-4">
+                <div class="col-md-7">
+                    <img id="mainImage" src="./assets/Home/image@2x.png" alt="Fruits" class="img-fluid rounded">
                 </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+
+                <div class="col-md-5">
+                    <div class="p-3 border bg-light image-block selected-block" data-image="./assets/Home/image.png">
+                        <h4 class="font-weight-bold poppins-light">Genderless Kei – Japan’s Hot</h4>
+                        <p class="poppins-light">Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s
+                            offering lots of</p>
+                    </div>
+                    <div class="p-3 border bg-light image-block" data-image="./assets/Home/random-1.jpeg">
+                        <h4 class="font-weight-bold">Better Strategy & Quality</h4>
+                        <p class="poppins-light">Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s
+                            offering lots of</p>
+                    </div>
+                    <div class="p-3 border bg-light image-block" data-image="./assets/Home/random-2.jpeg">
+                        <h4 class="font-weight-bold">Genderless Kei – Japan’s Hot</h4>
+                        <p class="poppins-light">Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s
+                            offering lots of</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div> -->
+    </section>
+
+    <section class="growth-section text-center">
+        <div class="container">
+            <h4 class="pink-text cormorant-sc-semibold">EXPERTS GROWTS</h4>
+            <h2 class="my-4 cormorant-sc-bold">OUR COMPANY GROWTH</h2>
+            <div class="row mt-5">
+                <div class="col-md-3 col-sm-6 mb-4 poppins-light">
+                    <div class="growth-card">
+                        <div class="icon">
+                            <img src="./assets/Home/heart (2).svg"></img>
+                        </div>
+                        <h5>199 +</h5>
+                        <p>Statified Customers</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4 poppins-light">
+                    <div class="growth-card">
+                        <div class="icon">
+                            <img src="./assets/Home/clock (3).svg"></img>
+                        </div>
+                        <h5>1591+</h5>
+                        <p>Days Of Operation</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4 poppins-light">
+                    <div class="growth-card">
+                        <div class="icon">
+                            <img src="./assets/Home/Path 4402.svg"></img>
+                        </div>
+                        <h5>283 +</h5>
+                        <p>Complete Project</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4 poppins-light">
+                    <div class="growth-card">
+                        <div class="icon">
+                            <img src="./assets/Home/Path 4406.svg"></img>
+                        </div>
+                        <h5>75+</h5>
+                        <p>Win Awards</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- jQuery and Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Custom JS -->
     <script src="./js/corosuel.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const blocks = document.querySelectorAll('.image-block');
+            const mainImage = document.getElementById('mainImage');
+
+            blocks.forEach(block => {
+                block.addEventListener('click', function () {
+                    // Remove the selected class from all blocks
+                    blocks.forEach(block => block.classList.remove('selected-block'));
+                    // Add the selected class to the clicked block
+                    this.classList.add('selected-block');
+
+                    // Change the main image with fade-out and fade-in effect
+                    const newImageSrc = this.getAttribute('data-image');
+                    mainImage.classList.add('hidden'); // Add class to fade out
+                    setTimeout(() => {
+                        mainImage.setAttribute('src', newImageSrc); // Change image source
+                        mainImage.classList.remove('hidden'); // Remove class to fade in
+                    }, 300); // Wait for the fade-out transition to complete
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>

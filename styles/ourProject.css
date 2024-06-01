@@ -1,0 +1,32 @@
+.selected-block {
+    background-color: #FF3147 !important;
+    color: white !important;
+    border-color: #FF3147 !important;
+}
+
+#mainImage {
+    object-fit: cover;
+    max-height: 400px;
+    width: 100%;
+    transition: opacity 0.3s ease;
+}
+
+@media (max-width: 767.98px) {
+    .ourProjects h1 {
+        font-size: 2rem;
+    }
+
+    .ourProjects img {
+        max-height: 300px;
+    }
+}
+
+.hidden{
+    opacity: 0;
+}
+
+.image-block {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+    padding: 10px;
+}

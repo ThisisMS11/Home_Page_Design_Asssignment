@@ -24,6 +24,10 @@
 
 
 /* Services CSS */
+.services {
+    background-color: #FAFAFA;
+}
+
 .services_child {
     width: 80%;
 }

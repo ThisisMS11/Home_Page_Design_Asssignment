@@ -1,0 +1,31 @@
+.growth-section {
+    padding: 60px 0;
+    background-color: #FAFAFA;
+}
+
+.growth-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #f0f0f0;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.growth-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.203);
+}
+
+.growth-card .icon {
+    font-size: 50px;
+    color: #FF3147;
+    margin-bottom: 20px;
+}
+
+.growth-card h5 {
+    font-size: 3rem;
+}
+
+.growth-card p {
+    margin-bottom: 0;
+}
