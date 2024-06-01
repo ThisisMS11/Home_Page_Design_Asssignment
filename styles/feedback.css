@@ -16,12 +16,21 @@
 }
 
 .feedback-card {
+    position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 30px;
     border-radius: 10px;
     background-color: #fff;
     border: 1px solid transparent;
     margin-bottom: 12px;
+}
+
+.feedback-card img {
+    position: absolute;
+    top: 20px;
+    left: 210px;
+    width: 45px;
+    opacity: 0.65;
 }
 
 .feedback-card p {
@@ -31,6 +40,7 @@
     margin-bottom: 10px;
     width: 65%;
     text-align: left;
+    z-index: 1;
 
 }
 
@@ -39,7 +49,7 @@
     font-weight: bold;
 }
 
-.author{
+.author {
     width: 65%;
 }
 
@@ -48,7 +58,7 @@
     color: #FF3147;
 }
 
-.author p{
+.author p {
     width: fit-content;
     height: fit-content;
 }
