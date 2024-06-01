@@ -1,31 +1,64 @@
-.carousel-inner {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: max-content;
-    /* Adjust this if necessary */
+.swiper {
+    width: 100%;
 }
 
-.carousel-inner {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.carousel-item {
-    /* min-width: 100%; */
-    position: relative;
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    height: 400px;
-    margin: 0px 10px;
-    /* Adjust the height as needed */
+    width: 300px !important;
+    height: 450px !important;
 }
 
-.carousel-item img {
+.swiper-wrapper {
+    height: fit-content !important;
+}
+
+.swiper-slide img {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.swiper-pagination {
+    position: relative;
+    top: 10px !important;
+    text-align: left !important;
+    margin: 4px;
+}
+
+.swiper-pagination-bullet {
+    height: 7px !important;
+    width: 7px !important;
+    margin: 0 2px !important;
+    border-radius: 50% !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: transparent !important;
+    border: 2px solid #ff4a4a !important;
+    position: relative !important;
+    height: 14px !important;
+    width: 14px !important;
+    vertical-align: middle !important;
+}
+
+.swiper-pagination-bullet-active::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 7px;
+    width: 7px;
+    background-color: #ff4a4a;
+    border-radius: 50%;
 }
 
 .hover-content {
@@ -45,50 +78,41 @@
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
-.carousel-item:hover .hover-content {
+.swiper-slide:hover .hover-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.carousel-dots {
-    text-align: center;
-    position: relative;
-    left: 0px;
+#WebDevIcon {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.hover-content a {
     width: 100%;
-    text-align: left;
+    text-decoration: none;
 }
 
-.dot {
-    height: 7px;
-    width: 7px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    vertical-align: middle;
-    /* Align all dots vertically */
+.hover-content p {
+    font-size: medium;
 }
 
-.dot.active {
-    background-color: transparent;
-    border: 2px solid #ff4a4a;
-    position: relative;
-    height: 14px;
-    width: 14px;
-    vertical-align: middle;
-    /* Align active dot vertically */
+.hover-content button {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    cursor: pointer;
 }
 
-.dot.active::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 7px;
-    width: 7px;
-    background-color: #ff4a4a;
-    border-radius: 50%;
+.hover-content button p {
+    font-weight: 400;
+    letter-spacing: 2px;
+    width: 60%;
+}
+
+#arrow-icon {
+    width: 35%;
 }

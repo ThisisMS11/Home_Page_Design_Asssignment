@@ -1,26 +1,26 @@
-let currentIndex = 0;
-
-function showSlides(index) {
-    const slides = document.querySelectorAll('.carousel-item');
-    const dots = document.querySelectorAll('.dot');
-
-    currentIndex = (index + slides.length) % slides.length;
-
-    const offset = currentIndex * 420; // Assuming each image has a width of 400px plus margin
-    document.querySelector('.carousel-inner').style.transform = `translateX(-${offset}px)`;
-
-    dots.forEach(dot => dot.classList.remove('active'));
-    dots[currentIndex].classList.add('active');
-}
-
-function currentSlide(index) {
-    showSlides(index - 1);
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    showSlides(currentIndex);
-
-    setInterval(() => {
-        showSlides(currentIndex + 1);
-    }, 3000);
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        "@0.00": {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        "@0.75": {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        "@1.00": {
+            slidesPerView: 3,
+            spaceBetween: 40,
+        },
+        "@1.50": {
+            slidesPerView: 4,
+            spaceBetween: 50,
+        },
+    },
 });

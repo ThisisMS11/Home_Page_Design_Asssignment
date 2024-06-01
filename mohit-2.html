@@ -7,28 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/utilityClasses.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
 
     <!-- Demo styles -->
     <style>
-        html,
-        body {
-            position: relative;
-            height: 100%;
-        }
-
-        body {
-            background: #eee;
-            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-            font-size: 14px;
-            color: #000;
-            margin: 0;
-            padding: 0;
-        }
-
         .swiper {
             width: 100%;
-            /* height: fit-content !important; */
-            border: solid 2px red;
         }
 
         .swiper-slide {
@@ -43,7 +28,6 @@
         }
 
         .swiper-wrapper {
-            border: solid 2px red;
             height: fit-content !important;
         }
 
@@ -62,7 +46,89 @@
         }
 
         .swiper-pagination-bullet {
-            background-color: black !important;
+            height: 7px !important;
+            width: 7px !important;
+            margin: 0 2px !important;
+            border-radius: 50% !important;
+            display: inline-block !important;
+            vertical-align: middle !important;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: transparent !important;
+            border: 2px solid #ff4a4a !important;
+            position: relative !important;
+            height: 14px !important;
+            width: 14px !important;
+            vertical-align: middle !important;
+        }
+
+        .swiper-pagination-bullet-active::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 7px;
+            width: 7px;
+            background-color: #ff4a4a;
+            border-radius: 50%;
+        }
+
+        .hover-content {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 0, 0, 0.8);
+            color: white;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            /* padding: -5px; */
+            object-fit: cover;
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+
+        .swiper-slide:hover .hover-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #WebDevIcon {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+
+        .hover-content a {
+            width: 100%;
+            text-decoration: none;
+        }
+
+        .hover-content p {
+            font-size: medium;
+        }
+
+        .hover-content button {
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 65%;
+            cursor: pointer;
+        }
+
+        .hover-content button p {
+            font-weight: 400;
+            letter-spacing: 2px;
+            width: 60%;
+        }
+
+        #arrow-icon {
+            width: 35%;
         }
     </style>
 </head>
@@ -73,21 +139,106 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <img src="./assets/Home/1-2.png" alt="Image not found" />
+                <div class="hover-content">
+                    <img src="./assets/Home/icon.svg" alt="Image not  found" id="WebDevIcon" />
+                    <h3>WEB DEVELOPMENT</h3>
+
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. .</p>
+
+                    </a>
+                    <a href="https://fylehq.com" target="_blank" class="mt-2 flexMagic">
+                        <button>
+                            <p class="pink-text ">Read More</p>
+                            <img src="./assets/Home/arrow.svg" alt="Image not found" id="arrow-icon" />
+                        </button>
+                    </a>
+                </div>
             </div>
             <div class="swiper-slide">
                 <img src="./assets/Home/2-2.png" alt="Image not found" />
+                <div class="hover-content">
+                    <img src="./assets/Home/icon.svg" alt="Image not  found" id="WebDevIcon" />
+                    <h3>WEB DEVELOPMENT</h3>
+
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. .</p>
+
+                    </a>
+                    <a href="https://fylehq.com" target="_blank" class="mt-2 flexMagic">
+                        <button>
+                            <p class="pink-text ">Read More</p>
+                            <img src="./assets/Home/arrow.svg" alt="Image not found" id="arrow-icon" />
+                        </button>
+                    </a>
+                </div>
             </div>
             <div class="swiper-slide">
                 <img src="./assets/Home/3-2.png" alt="Image not found" />
+                <div class="hover-content">
+                    <img src="./assets/Home/icon.svg" alt="Image not  found" id="WebDevIcon" />
+                    <h3>WEB DEVELOPMENT</h3>
+
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. .</p>
+
+                    </a>
+                    <a href="https://fylehq.com" target="_blank" class="mt-2 flexMagic">
+                        <button>
+                            <p class="pink-text ">Read More</p>
+                            <img src="./assets/Home/arrow.svg" alt="Image not found" id="arrow-icon" />
+                        </button>
+                    </a>
+                </div>
             </div>
             <div class="swiper-slide">
                 <img src="./assets/Home/2-2.png" alt="Image not found" />
+                <div class="hover-content">
+                    <img src="./assets/Home/icon.svg" alt="Image not  found" id="WebDevIcon" />
+                    <h3>WEB DEVELOPMENT</h3>
+
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. .</p>
+
+                    </a>
+                    <a href="https://fylehq.com" target="_blank" class="mt-2 flexMagic">
+                        <button>
+                            <p class="pink-text ">Read More</p>
+                            <img src="./assets/Home/arrow.svg" alt="Image not found" id="arrow-icon" />
+                        </button>
+                    </a>
+                </div>
             </div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
+            <div class="swiper-slide">
+                <img src="./assets/Home/1-2.png" alt="Image not found" />
+                <div class="hover-content">
+                    <img src="./assets/Home/icon.svg" alt="Image not  found" id="WebDevIcon" />
+                    <h3>WEB DEVELOPMENT</h3>
+
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. .</p>
+
+                    </a>
+                    <a href="https://fylehq.com" target="_blank" class="mt-2 flexMagic">
+                        <button>
+                            <p class="pink-text ">Read More</p>
+                            <img src="./assets/Home/arrow.svg" alt="Image not found" id="arrow-icon" />
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="./assets/Home/1-2.png" alt="Image not found" />
+                <div class="hover-content">
+                    <img src="./assets/Home/icon.svg" alt="Image not  found" id="WebDevIcon" />
+                    <h3>WEB DEVELOPMENT</h3>
+
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. .</p>
+
+                    </a>
+                    <a href="https://fylehq.com" target="_blank" class="mt-2 flexMagic">
+                        <button>
+                            <p class="pink-text ">Read More</p>
+                            <img src="./assets/Home/arrow.svg" alt="Image not found" id="arrow-icon" />
+                        </button>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
     <div class="swiper-pagination"></div>
