@@ -2,8 +2,35 @@
     color: #FF3147;
 }
 
-.flexMagic{
+.flexMagic {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.section_first_heading {
+    color: #FF3147;
+    font-family: "Cormorant SC", serif;
+    font-weight: 600;
+    font-style: normal;
+    margin: 10px 0px;
+}
+
+.section_second_heading {
+    font-family: "Cormorant SC", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.poppins-lighter {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-darker{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }

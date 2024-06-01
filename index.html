@@ -26,32 +26,34 @@
 <body>
     <!-- CONTACT US SECTION -->
     <section class="contact-us p-4">
-        <div class="contact_us_child container -success row mx-auto">
+        <div class="contact_us_inner container row mx-auto">
 
-            <div class="contactus-left-section mt-5 -primary col-lg-6 p-4">
-                <h5 class="-danger pink-text cormorant-sc-semibold">
-                    AWARD WINNING
-                </h5>
-                <h1 class="my-4 cormorant-sc-bold">
-                    DIGITAL MARKETING AGENCY
-                </h1>
+            <div class="contactus-left-section mt-5 col-lg-7 p-5 flexMagic">
+                <div>
+                    <h5 class=" pink-text section_first_heading font-weight-bold">
+                        AWARD WINNING
+                    </h5>
+                    <h1 class="my-4 cormorant-sc-bold">
+                        DIGITAL MARKETING AGENCY
+                    </h1>
 
-                <h6 class="my-5 poppins-regular">
-                    The syntax is nearly the same as the default, positive margin utilities, but with the addition of n
-                    before the requested size. Here are some representative examples of these classes.
-                </h6>
+                    <h6 class="my-5 poppins-lighter">
+                        The syntax is nearly the same as the default, positive margin utilities, but with the addition
+                        of n
+                        before the requested size. Here are some representative examples of these classes.
+                    </h6>
 
-                <div class="contact_us_button">
-                    <button type="button" data-toggle="modal" data-target="#exampleModal">
-                        Contact Us
-                    </button>
+                    <div class="contact_us_button my-5">
+                        <button type="button" data-toggle="modal" data-target="#exampleModal">
+                            Contact Us
+                        </button>
+                    </div>
                 </div>
             </div>
 
-            <div id="contactus-right-section" class="d-flex justify-content-end col-6 ">
+            <div id="contactus-right-section" class="d-flex justify-content-end col-lg-5">
                 <img src="./assets/Home/hero.png" alt="Image not found" class="ratio ratio-3/2">
             </div>
-
         </div>
     </section>
 
@@ -61,7 +63,7 @@
 
             <div class="modal-content p-2">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Talk to Us</h5>
+                    <h5 class="modal-title poppins-darker" id="exampleModalLabel">Talk to Us</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -71,22 +73,25 @@
                     <form id="contactForm" method="post" action="https://getform.io/f/nbdowxwa">
                         <div class="mt-3 floating-label-container">
                             <input type="email" name="email" class="custom-form-control" id="workEmail" required>
-                            <label for="workEmail" class="floating-label">Work email*</label>
+                            <label for="workEmail" class="floating-label poppins-lighter">Work email*</label>
                         </div>
+
                         <div class="d-flex justify-content-between mt-3">
                             <div class="floating-label-container">
                                 <input type="text" name="firstname" class="custom-form-control" id="firstName" required>
-                                <label for="firstName" class="floating-label">First name*</label>
+
+                                <label for="firstName" class="floating-label poppins-lighter">First name*</label>
                             </div>
                             <div class="floating-label-container">
                                 <input type="text" name="lastname" class="custom-form-control" id="lastName" required>
-                                <label for="lastName" class="floating-label">Last name*</label>
+
+                                <label for="lastName" class="floating-label poppins-lighter">Last name*</label>
                             </div>
                         </div>
 
                         <div class="form-group form-check">
                             <input type="checkbox" name="checkbox" class="form-check-input" id="termsCheck" required>
-                            <label class="form-check-label" for="termsCheck">
+                            <label class="form-check-label" for="termsCheck" class="poppins-lighter">
                                 I agree to Fyle's terms and conditions, and provide consent to send me communication.
                             </label>
                         </div>
@@ -101,16 +106,16 @@
     <!-- WHAT WE DO SECTION  -->
     <section class="services">
         <div class="services_child container p-4 mx-auto">
-            <h5 class="p-1 pink-text cormorant-sc-semibold">
+            <h5 class="section_first_heading p-3">
                 WHAT WE DO ?
             </h5>
 
-            <div class="d-flex mt-4 flex-row justify-content-center align-items-center  -primary row p-1">
-                <h1 class="cormorant-sc-bold col-lg-5">
+            <div class="d-flex mt-3 row p-3">
+                <h1 class="col-lg-5 mb-5 section_second_heading">
                     SERVICES PROVIDE FOR YOU
                 </h1>
 
-                <h6 class="poppins-regular col-lg-7">
+                <h6 class="poppins-lighter col-lg-7">
                     Mobile First means designing for mobile before designing for desktop or any other device (This
                     will make the page display faster on smaller devices).This means that we must make some changes
                     in our CSS.
@@ -118,199 +123,230 @@
 
             </div>
 
-            <!-- COROSUEL SECTION -->
+            <!-- COROSUEL SECTION STARTS -->
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img src="./assets/Home/1-2.png" alt="Image not found" />
                         <div class="hover-content">
-                            <img src="./assets/Home/icon.svg" alt="Image not  found" id="WebDevIcon" />
-                            <h3>WEB DEVELOPMENT</h3>
 
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. .</p>
+                            <div class="WebDevIcon">
+                                <img src="./assets/Home/icon.svg" alt="Image not found" />
+                            </div>
+                            <h3 class="my-4 poppins-darker">WEB DEVELOPMENT</h3>
 
-                            </a>
+                            <p class="poppins-lighter">Lorem ipsum dolor sit amet consectetur, adipisicing elit. .</p>
+
                             <a href="https://fylehq.com" target="_blank" class="mt-2 flexMagic">
-                                <button>
-                                    <p class="pink-text ">Read More</p>
+                                <span class="pink-text poppins-lighter">Read More</span>
+                                <div>
                                     <img src="./assets/Home/arrow.svg" alt="Image not found" id="arrow-icon" />
-                                </button>
+                                </div>
                             </a>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <img src="./assets/Home/2-2.png" alt="Image not found" />
                         <div class="hover-content">
-                            <img src="./assets/Home/icon.svg" alt="Image not  found" id="WebDevIcon" />
-                            <h3>WEB DEVELOPMENT</h3>
 
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. .</p>
+                            <div class="WebDevIcon">
+                                <img src="./assets/Home/icon.svg" alt="Image not found" />
+                            </div>
+                            <h3 class="my-4 poppins-darker">WEB DEVELOPMENT</h3>
 
-                            </a>
+                            <p class="poppins-lighter">Lorem ipsum dolor sit amet consectetur, adipisicing elit. .</p>
+
                             <a href="https://fylehq.com" target="_blank" class="mt-2 flexMagic">
-                                <button>
-                                    <p class="pink-text ">Read More</p>
+                                <span class="pink-text poppins-lighter">Read More</span>
+                                <div>
                                     <img src="./assets/Home/arrow.svg" alt="Image not found" id="arrow-icon" />
-                                </button>
+                                </div>
                             </a>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <img src="./assets/Home/3-2.png" alt="Image not found" />
                         <div class="hover-content">
-                            <img src="./assets/Home/icon.svg" alt="Image not  found" id="WebDevIcon" />
-                            <h3>WEB DEVELOPMENT</h3>
 
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. .</p>
+                            <div class="WebDevIcon">
+                                <img src="./assets/Home/icon.svg" alt="Image not found" />
+                            </div>
+                            <h3 class="my-4 poppins-darker">WEB DEVELOPMENT</h3>
 
-                            </a>
+                            <p class="poppins-lighter">Lorem ipsum dolor sit amet consectetur, adipisicing elit. .</p>
+
                             <a href="https://fylehq.com" target="_blank" class="mt-2 flexMagic">
-                                <button>
-                                    <p class="pink-text ">Read More</p>
+                                <span class="pink-text poppins-lighter">Read More</span>
+                                <div>
                                     <img src="./assets/Home/arrow.svg" alt="Image not found" id="arrow-icon" />
-                                </button>
+                                </div>
                             </a>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <img src="./assets/Home/2-2.png" alt="Image not found" />
                         <div class="hover-content">
-                            <img src="./assets/Home/icon.svg" alt="Image not  found" id="WebDevIcon" />
-                            <h3>WEB DEVELOPMENT</h3>
 
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. .</p>
+                            <div class="WebDevIcon">
+                                <img src="./assets/Home/icon.svg" alt="Image not found" />
+                            </div>
+                            <h3 class="my-4 poppins-darker">WEB DEVELOPMENT</h3>
 
-                            </a>
+                            <p class="poppins-lighter">Lorem ipsum dolor sit amet consectetur, adipisicing elit. .</p>
+
                             <a href="https://fylehq.com" target="_blank" class="mt-2 flexMagic">
-                                <button>
-                                    <p class="pink-text ">Read More</p>
+                                <span class="pink-text poppins-lighter">Read More</span>
+                                <div>
                                     <img src="./assets/Home/arrow.svg" alt="Image not found" id="arrow-icon" />
-                                </button>
+                                </div>
                             </a>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <img src="./assets/Home/1-2.png" alt="Image not found" />
                         <div class="hover-content">
-                            <img src="./assets/Home/icon.svg" alt="Image not  found" id="WebDevIcon" />
-                            <h3>WEB DEVELOPMENT</h3>
 
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. .</p>
+                            <div class="WebDevIcon">
+                                <img src="./assets/Home/icon.svg" alt="Image not found" />
+                            </div>
+                            <h3 class="my-4 poppins-darker">WEB DEVELOPMENT</h3>
 
-                            </a>
+                            <p class="poppins-lighter">Lorem ipsum dolor sit amet consectetur, adipisicing elit. .</p>
+
                             <a href="https://fylehq.com" target="_blank" class="mt-2 flexMagic">
-                                <button>
-                                    <p class="pink-text ">Read More</p>
+                                <span class="pink-text poppins-lighter">Read More</span>
+                                <div>
                                     <img src="./assets/Home/arrow.svg" alt="Image not found" id="arrow-icon" />
-                                </button>
+                                </div>
                             </a>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <img src="./assets/Home/1-2.png" alt="Image not found" />
                         <div class="hover-content">
-                            <img src="./assets/Home/icon.svg" alt="Image not  found" id="WebDevIcon" />
-                            <h3>WEB DEVELOPMENT</h3>
+
+                            <div class="WebDevIcon">
+                                <img src="./assets/Home/icon.svg" alt="Image not found" />
+                            </div>
+
+                            <h3 class="my-4">WEB DEVELOPMENT</h3>
 
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. .</p>
 
-                            </a>
                             <a href="https://fylehq.com" target="_blank" class="mt-2 flexMagic">
-                                <button>
-                                    <p class="pink-text ">Read More</p>
+                                <span class="pink-text">Read More</span>
+                                <div>
                                     <img src="./assets/Home/arrow.svg" alt="Image not found" id="arrow-icon" />
-                                </button>
+                                </div>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="swiper-pagination"></div>
+            <!-- COROSUEL SECTION ENDS -->
         </div>
     </section>
 
-    <section>
-        <div class="container text-center my-5">
-            <h4 class="pink-text cormorant-sc-semibold">WHY CHOOSE US</h4>
-            <h2 class="font-weight-bold cormorant-sc-bold">WHY WE ARE BEST</h2>
-            <div class="row mt-4">
+    <!-- WHYCHOOSEUS SECTION STARTS  -->
+    <section class="mt-5">
+        <div class="container text-center ">
+            <h4 class="section_first_heading">WHY CHOOSE US</h4>
+            <h2 class="section_second_heading">WHY WE ARE BEST</h2>
+            <div class="row mt-5">
                 <div class="col-md-3 col-sm-6 my-3">
                     <div class="icon mb-3">
                         <img src="./assets/Home/1-1.svg" alt="Clarified Vision & Target" class="img-fluid">
                     </div>
-                    <h5 class="font-weight-bold poppins-semibold ">Clarified Vision & Target</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy.</p>
+                    <h5 class="poppins-darker">Clarified Vision & Target</h5>
+                    <p class="poppins-lighter">Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam
+                        nonumy.</p>
                 </div>
                 <div class="col-md-3 col-sm-6 my-3">
                     <div class="icon mb-3">
                         <img src="./assets/Home/2-1.svg" alt="High Performance" class="img-fluid">
                     </div>
-                    <h5 class="font-weight-bold poppins-semibold ">High Performance</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy.</p>
+                    <h5 class="poppins-darker">High Performance</h5>
+                    <p class="poppins-lighter">Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam
+                        nonumy.</p>
                 </div>
                 <div class="col-md-3 col-sm-6 my-3">
                     <div class="icon mb-3">
                         <img src="./assets/Home/3-1.svg" alt="Maintain Security" class="img-fluid">
                     </div>
-                    <h5 class="font-weight-bold poppins-semibold ">Maintain Security</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy.</p>
+                    <h5 class="poppins-darker">Maintain Security</h5>
+                    <p class="poppins-lighter">Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam
+                        nonumy.</p>
                 </div>
                 <div class="col-md-3 col-sm-6 my-3">
                     <div class="icon mb-3">
                         <img src="./assets/Home/4.svg" alt="Better Strategy & Quality" class="img-fluid">
                     </div>
-                    <h5 class="font-weight-bold poppins-semibold ">Better Strategy & Quality</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy.</p>
+                    <h5 class="poppins-darker">Better Strategy & Quality</h5>
+                    <p class="poppins-lighter">Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam
+                        nonumy.</p>
                 </div>
             </div>
         </div>
     </section>
+    <!-- WHYCHOOSEUS SECTION ENDS  -->
 
-    <section class="ourProjects">
+    <!-- PROJECTS SECTION STARTS  -->
+    <section class="ourProjects mt-5">
         <div class="container my-5">
-            <div class="text-center">
-                <h2 class="pink-text cormorant-sc-semibold">OUR PROJECT</h2>
-                <h1 class="font-weight-bold my-4 cormorant-sc-bold">WHY WE ARE BEST</h1>
+            <div class="text-center mb-5">
+                <h4 class="section_first_heading">OUR PROJECT</h4>
+                <h2 class="section_second_heading">WHY WE ARE BEST</h2>
             </div>
 
-            <div class="row mt-4 mt-4">
+            <div class="row mt-5">
                 <div class="col-md-7">
                     <img id="mainImage" src="./assets/Home/image@2x.png" alt="Fruits" class="img-fluid rounded">
                 </div>
 
                 <div class="col-md-5">
-                    <div class="p-3 border bg-light image-block selected-block" data-image="./assets/Home/image.png">
-                        <h4 class="font-weight-bold poppins-light">Genderless Kei – Japan’s Hot</h4>
-                        <p class="poppins-light">Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s
+
+                    <div class="p-3  bg-light image-block selected-block" data-image="./assets/Home/image.png">
+                        <h4 class="poppins-darker">Genderless Kei – Japan’s Hot</h4>
+                        <p class="poppins-lighter">Set to launch on the manufacturer’s new A330neo aircraft in 2017,
+                            it’s
                             offering lots of</p>
                     </div>
-                    <div class="p-3 border bg-light image-block" data-image="./assets/Home/random-1.jpeg">
-                        <h4 class="font-weight-bold">Better Strategy & Quality</h4>
-                        <p class="poppins-light">Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s
+
+                    <div class="p-3  bg-light image-block" data-image="./assets/Home/random-1.jpeg">
+
+                        <h4 class="poppins-darker">Better Strategy & Quality</h4>
+                        <p class="poppins-lighter">Set to launch on the manufacturer’s new A330neo aircraft in 2017,
+                            it’s
                             offering lots of</p>
                     </div>
-                    <div class="p-3 border bg-light image-block" data-image="./assets/Home/random-2.jpeg">
-                        <h4 class="font-weight-bold">Genderless Kei – Japan’s Hot</h4>
-                        <p class="poppins-light">Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s
+
+                    <div class="p-3  bg-light image-block" data-image="./assets/Home/random-2.jpeg">
+                        <h4 class="poppins-darker">Genderless Kei – Japan’s Hot</h4>
+                        <p class="poppins-lighter">Set to launch on the manufacturer’s new A330neo aircraft in 2017,
+                            it’s
                             offering lots of</p>
                     </div>
+
                 </div>
             </div>
         </div>
     </section>
+    <!-- PROJECTS SECTION STARTS  -->
 
-    <section class="growth-section text-center">
+    <!-- GROWTH SECTION STARTS  -->
+    <section class="growth-section text-center mt-5">
         <div class="container">
-            <h4 class="pink-text cormorant-sc-semibold">EXPERTS GROWTS</h4>
-            <h2 class="my-4 cormorant-sc-bold">OUR COMPANY GROWTH</h2>
+            <h4 class="section_first_heading">EXPERTS GROWTS</h4>
+            <h2 class="section_second_heading">OUR COMPANY GROWTH</h2>
             <div class="row mt-5">
                 <div class="col-md-3 col-sm-6 mb-4 poppins-light">
                     <div class="growth-card">
                         <div class="icon">
                             <img src="./assets/Home/heart (2).svg"></img>
                         </div>
-                        <h5>199 +</h5>
-                        <p>Statified Customers</p>
+                        <h5 class="poppins-darker">199 +</h5>
+                        <p class="poppins-lighter">Statified Customers</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 mb-4 poppins-light">
@@ -318,8 +354,8 @@
                         <div class="icon">
                             <img src="./assets/Home/clock (3).svg"></img>
                         </div>
-                        <h5>1591+</h5>
-                        <p>Days Of Operation</p>
+                        <h5 class="poppins-darker">1591+</h5>
+                        <p class="poppins-lighter">Days Of Operation</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 mb-4 poppins-light">
@@ -327,8 +363,8 @@
                         <div class="icon">
                             <img src="./assets/Home/Path 4402.svg"></img>
                         </div>
-                        <h5>283 +</h5>
-                        <p>Complete Project</p>
+                        <h5 class="poppins-darker">283+</h5>
+                        <p class="poppins-lighter">Complete Project</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 mb-4 poppins-light">
@@ -336,35 +372,38 @@
                         <div class="icon">
                             <img src="./assets/Home/Path 4406.svg"></img>
                         </div>
-                        <h5>75+</h5>
-                        <p>Win Awards</p>
+                        <h5 class="poppins-darker">75+</h5>
+                        <p class="poppins-lighter">Win Awards</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- GROWTH SECTION ENDS  -->
 
-    <!-- FeedBack Section  -->
+    <!-- FEEDBACK SECTION STARTS  -->
     <section class="feedback-section">
         <div class="container">
-            <h4>CLIENT'S FEEDBACK</h4>
-            <h2>PEOPLE SAY'S ABOUT US !</h2>
+            <h4 class="section_first_heading">CLIENT'S FEEDBACK</h4>
+            <h2 class="section_second_heading">PEOPLE SAY'S ABOUT US !</h2>
             <div class="feedback-card">
                 <img src="./assets/Home/Quotemarks-left.svg" alt="">
-                <p class="poppins-medium mx-auto">
+                <p class="poppins-lighter mx-auto">
                     Jannat Tumpa The standard chunk of Lorem Ipsum used since the 1500sis
                     reproduced below for those interested. Sections Bonorum et Malorum original.
                 </p>
 
                 <div class="author d-flex align-items-center mx-auto">
-                    <h6 class="poppins-semibold mr-2">JANNAT TUMPA </h6>
-                    <p class="text-muted">- COO, AMERIMAR ENTERPRISES, INC.</p>
+                    <h6 class="poppins-darker">JANNAT TUMPA </h6>
+                    <p class="text-muted poppins-lighter">- COO, AMERIMAR ENTERPRISES, INC.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- FEEDBACK SECTION ENDS  -->
 
+    <!-- FOOTER STARTS  -->
     <footer>
         <div class="banner flexMagic">
             <img class="group500" src="./assets/Home/Group 500.png" alt="Image not found" />
@@ -376,30 +415,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Custom JS -->
     <script src="./js/corosuel.js"></script>
+    <script src="./js/projects.js"></script>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const blocks = document.querySelectorAll('.image-block');
-            const mainImage = document.getElementById('mainImage');
-
-            blocks.forEach(block => {
-                block.addEventListener('click', function () {
-                    // Remove the selected class from all blocks
-                    blocks.forEach(block => block.classList.remove('selected-block'));
-                    // Add the selected class to the clicked block
-                    this.classList.add('selected-block');
-
-                    // Change the main image with fade-out and fade-in effect
-                    const newImageSrc = this.getAttribute('data-image');
-                    mainImage.classList.add('hidden'); // Add class to fade out
-                    setTimeout(() => {
-                        mainImage.setAttribute('src', newImageSrc); // Change image source
-                        mainImage.classList.remove('hidden'); // Remove class to fade in
-                    }, 300); // Wait for the fade-out transition to complete
-                });
-            });
-        });
-    </script>
 </body>
 
 </html>

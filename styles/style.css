@@ -2,12 +2,12 @@
     background-color: white;
 }
 
-.contact_us_child {
+.contact_us_inner {
     width: 80%;
 }
 
 #contactus-right-section img {
-    width: 360px;
+    width: 450px;
 }
 
 .contact_us_button button {
@@ -51,10 +51,6 @@
         text-align: center;
         margin: 1px 0px;
     }
-
-    /* .contactus-left-section h1{
-        how
-    } */
 
     .contact_us_button {
         text-align: center;
