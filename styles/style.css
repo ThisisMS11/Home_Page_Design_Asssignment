@@ -1,7 +1,5 @@
 .contact-us {
-    border: solid 2px red;
     background-color: white;
-    margin: 0 auto;
 }
 
 .contact_us_child {
@@ -13,7 +11,7 @@
 }
 
 #contactus-right-section img {
-    width: 345px;
+    width: 360px;
 }
 
 .contact_us_button button {
@@ -23,6 +21,14 @@
     padding: 8px;
     border-radius: 2px;
 }
+
+
+/* Services CSS */
+.services_child {
+    width: 80%;
+}
+
+
 
 @media only screen and (max-width:1000px) {
     .contact-us {
@@ -53,4 +59,9 @@
     .contact_us_button {
         text-align: center;
     }
+
+    .services_child {
+        text-align: center;
+    }
+
 }
