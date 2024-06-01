@@ -1,0 +1,54 @@
+.feedback-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.feedback-section h4 {
+    color: #FF3147;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.feedback-section h2 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.feedback-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    margin-bottom: 12px;
+}
+
+.feedback-card p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 65%;
+    text-align: left;
+
+}
+
+.feedback-card h6 {
+    color: #FF3147;
+    font-weight: bold;
+}
+
+.author{
+    width: 65%;
+}
+
+.feedback-card .author {
+    font-weight: bold;
+    color: #FF3147;
+}
+
+.author p{
+    width: fit-content;
+    height: fit-content;
+}

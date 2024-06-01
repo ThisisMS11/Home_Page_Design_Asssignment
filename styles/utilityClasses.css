@@ -1,0 +1,9 @@
+.pink-text {
+    color: #FF3147;
+}
+
+.flexMagic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
