@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #ff4a4a;
+    --bullet-size: 7px;
+    --active-bullet-size: 14px;
+}
+
 .swiper {
     width: 100%;
 }
@@ -31,8 +37,8 @@
 }
 
 .swiper-pagination-bullet {
-    height: 7px !important;
-    width: 7px !important;
+    height: var(--bullet-size) !important;
+    width: var(--bullet-size) !important;
     margin: 0 2px !important;
     border-radius: 50% !important;
     display: inline-block !important;
@@ -41,10 +47,10 @@
 
 .swiper-pagination-bullet-active {
     background-color: transparent !important;
-    border: 2px solid #ff4a4a !important;
+    border: 2px solid var(--primary-color) !important;
     position: relative !important;
-    height: 14px !important;
-    width: 14px !important;
+    height: var(--active-bullet-size) !important;
+    width: var(--active-bullet-size) !important;
     vertical-align: middle !important;
 }
 
@@ -54,9 +60,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 7px;
-    width: 7px;
-    background-color: #ff4a4a;
+    height: var(--bullet-size);
+    width: var(--bullet-size);
+    background-color: var(--primary-color);
     border-radius: 50%;
 }
 
@@ -73,26 +79,30 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* padding: -5px; */
     object-fit: cover;
+    opacity: 0;
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    animation: fadeIn 0.5s ease-in-out forwards;    
 }
-
-/* .hover-content h3{
-    m
-} */
-
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 .swiper-slide:hover .hover-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    opacity: 1;
 }
 
 .WebDevIcon {
     width: 2.4rem;
     height: 2.4rem;
 }
-
 
 .hover-content a {
     border: none;
@@ -107,7 +117,6 @@
     background-color: white;
 }
 
-
 .hover-content a span {
     font-weight: 400;
     letter-spacing: 2px;
@@ -115,5 +124,5 @@
 }
 
 .hover-content a div {
-    width:30%;
+    width: 30%;
 }
